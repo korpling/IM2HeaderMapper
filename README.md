@@ -16,7 +16,7 @@ To use the IM2HeaderMapper itself, which is a Java based program as well, you ne
 
 
 ## Usage
-To use this tool with the provided scripts open your terminal/ cmd, navigate to the parent directory "IM2Header" then type, dependend on your plattform:
+To use this tool with the provided scripts you can unzip the attached zip-file "IM2HeaderMapperQuickUse.zip", open your terminal/ cmd, navigate to the parent directory "IM2HeaderMapper" then type, dependend on your plattform:
 
 **Windows**
 ```
@@ -70,10 +70,12 @@ A possible xml output could look like the following sample:
 The LAUDATIO metadata is composed of three components: Information about the corpus (CorpusHeader) itself, information about all historical documents (DocumentHeader) in the corpus and about all annotation layers (PreparationHeader) and how they were annotated (e.g. which formats where used).
 Since the final corpus usually don't provide any informations about the preparation steps that were used to create the corpus, the IM2HeaderMapper does not consider this part of the LAUDATIO metadata model and it has to be produced manually.
 The other two components can (partly) be build from the SaltInfoModule, any values that can't get extracted from the InfoModule-output are set as "NA" by default. Those values need to get changed manually as well.
+Comments will help you to create a completed header with all informations needed.
 
 For the encoding-description in the corpus-header the version of the used application is needed, to ensure validity the default value is currently "1xxx".
 
 The default availability of the corpus is set to "unknown".
+A header created with the IM2HeaderMapper usually has the following form:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -168,7 +170,6 @@ The default availability of the corpus is set to "unknown".
   <text />
 </TEI>
 ```
->>>>>>>>>>>>>> insert steps to show what happens
 
 ## Contribute
 Since the IM2HeaderMapper is under a free license, please feel free to fork it from github and improve the mapper. If you even think that others can benefit from your improvements, don't hesitate to make a pull request, so that your changes can be merged.
