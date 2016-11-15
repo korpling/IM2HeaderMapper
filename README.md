@@ -16,7 +16,8 @@ To use the IM2HeaderMapper itself, which is a Java based program as well, you ne
 
 
 ## Usage
-To use this tool with the provided scripts you can unzip the attached zip-file "IM2HeaderMapperQuickUse.zip", open your terminal/ cmd, navigate to the parent directory "IM2HeaderMapper" then type, dependend on your plattform:
+To use this tool with the provided scripts you can unzip the attached zip-file "IM2HeaderMapperQuickUse.zip". Put the InfoModule-output in the `input`-directory (note, please don't put the output into an additional subdirectory).
+Open your terminal/ cmd, navigate to the parent directory "IM2HeaderMapper" then type, dependend on your plattform:
 
 **Windows**
 ```
@@ -28,6 +29,7 @@ easy2Use.bat [setInfo]
 ```
 bash easy2Use.sh [setInfo]
 ```
+The result will be written to the `output`-directory.
 An option to set few further informations by console is applicable (disabled by default). Enable this option by passing "setInfo" as argument (no further arguments allowed currently).
 With this option the corpus-name is inquired (default-value: name of the saltInfo-input-directory).
 In addition the date of the (first) corpus-release is inquired (default-value "1111" (to ensure validity)).
